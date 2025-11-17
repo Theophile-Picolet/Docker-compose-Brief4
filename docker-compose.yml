@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres
+    container_name: brief4_postgres_docker
+    environment:
+      POSTGRES_USER: theo
+      POSTGRES_PASSWORD: theo123
+      POSTGRES_DB: brief4_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql
+      - ./init:/docker-entrypoint-initdb.d
+
+volumes:
+  pg_data:
