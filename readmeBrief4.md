@@ -13,9 +13,13 @@
    ```bash
    docker compose up
    ```
-4. Se connecter à PostgreSQL (exemple) :
-   ```bash
-   docker exec -it <nom_du_container> psql -U dev -d projet_db
+4. Se connecter à PostgreSQL (Dbeaver) :
+   ```informations de connexion:
+   POSTGRES_USER: theo
+      POSTGRES_PASSWORD: theo123
+      POSTGRES_DB: brief4_db
+    ports:
+      - "5432"
    ```
 
 ## 🧩 Choix de modélisation
